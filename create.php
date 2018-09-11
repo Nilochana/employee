@@ -1,20 +1,20 @@
 <?php
-     /* $name= $email= $username= $password = $phno="";*/
       if($_POST)
       {
-        $user=$_POST["username"];
-        $pass=$_POST["password"];
         
+        $username=$_POST["username"];
+        $password=$_POST["password"];
         $link=mysqli_connect("localhost","root","","employee");
-        $sql="INSERT INTO admin(username, password) values ('$user','$pass')";
+        $sql = "SELECT * FROM admin WHERE username = '$username' and password = '$password'";
         $result = mysqli_query($link,$sql);
-        if(!$result)
+        $count = mysqli_num_rows($result);
+        if($count == 1)
         {
-         echo "ERROR! Please re-check the details entered.";
+          echo "Login Successfull";
         }
-        else
+        else if($count == 0)
         {
-         echo "Sign Up complete.";
+          echo "Login Failed";
         }
         mysqli_close($link);
       }

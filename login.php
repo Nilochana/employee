@@ -14,7 +14,7 @@
   <div class="box">
   <h2>Login</h2>
     <div class="inputBox">
-      <input type="email" name="username" required value="">
+      <input type="text" name="username" required value="">
       <label>username</label>
     </div>
     <div class="inputBox">
