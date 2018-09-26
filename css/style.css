@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('images\r1.jpg');
+    background-image: url('../images/r1.jpg');
     background-size: cover;
     font-family: sans-serif;
   }
@@ -77,27 +77,10 @@ body {
     background-color: #1cb1f5;
   }
   
+/* end login page */
 
 
-
-  /*addemp Page Start*/
-.bg3{
-  background-image: url('');
-  background-color: #fff;
-  background-repeat: no-repeat;
-  background-size:cover;
-  padding-top:60px; 
-  padding-bottom: 60px;
-}
-/*End Return Page*/
-
-
-
-
-
-/*addemp1 page start*/
-
-
+/*userdetails page start*/
 body{
   background: #f5f5f5;
   font-size: 14px;
@@ -204,4 +187,4 @@ display: none;
 
 
 
-  /*addemp1 page end*/
+  /*userdetails page end*/
